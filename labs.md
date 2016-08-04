@@ -18,8 +18,14 @@
 - Write down the HTTP response codes returned from each of those curl commands
 
 ### Lab 3: JSON parsing
-- Get data from one of these APIs https://github.com/toddmotto/public-apis
-- Pull out some information that interests you and present it from a command line program (i.e. public static main).
+- First, fix my code so that RestOperationsTest passes.
+- Here's a list of free APIs https://github.com/toddmotto/public-apis
+- Use the Drone Strike API http://dronestre.am/ to complete these exercises:
+  1. Print the location and narrative or the first strike in the list
+  2. Print the location of the fifth strike in the list
+  3. Print out how many drone strikes took place in each country
+  4. Print out how many drone strikes took place each year
+  5. Print the location and narrative of all strikes where at least 10 people were killed
 
 ### Lab 4: More cUrl and HTTP requests
 - Use curl to view a form that you created in the last class

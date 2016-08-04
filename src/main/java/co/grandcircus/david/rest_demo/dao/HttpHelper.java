@@ -2,6 +2,7 @@ package co.grandcircus.david.rest_demo.dao;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
@@ -19,15 +20,13 @@ public class HttpHelper {
 				return body;
 			} else {
 				body.close();
-				if (connection.getResponseCode() == 404) {
-					// Not Found
-					return null;
-				} else {
-					throw new RuntimeException(
+				throw new RuntimeException(
 							"HTTP Response " + connection.getResponseCode() + " " + connection.getResponseMessage());
-				}
 			}
 
+		} catch (FileNotFoundException ex) {
+			// 404 Result Status Code
+			return null;
 		} catch (IOException ex) {
 			throw new RuntimeException("Error on GET " + urlString, ex);
 		}
