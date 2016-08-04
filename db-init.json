@@ -1,0 +1,98 @@
+{
+  "people": [
+    {
+      "id": 1,
+      "name": "Aisha",
+      "instructor": true,
+      "courseId": 2
+    },
+    {
+      "id": 2,
+      "name": "David",
+      "instructor": true,
+      "courseId": 1
+    },
+    {
+      "id": 3,
+      "name": "Picasso",
+      "instructor": false,
+      "courseId": 2
+    },
+    {
+      "id": 4,
+      "name": "Van Gogh",
+      "instructor": false,
+      "courseId": 2
+    },
+    {
+      "id": 5,
+      "name": "Andy Warhol",
+      "instructor": false,
+      "courseId": 2
+    },
+    {
+      "id": 6,
+      "name": "Monet",
+      "instructor": false,
+      "courseId": 2
+    },
+    {
+      "id": 7,
+      "name": "Ansel Adams",
+      "instructor": false,
+      "courseId": 2
+    },
+    {
+      "id": 8,
+      "name": "Elisha Otis",
+      "instructor": false,
+      "courseId": 1
+    },
+    {
+      "id": 9,
+      "name": "Archimedes",
+      "instructor": false,
+      "courseId": 1
+    },
+    {
+      "id": 10,
+      "name": "Da Vinci",
+      "instructor": false,
+      "courseId": 1
+    },
+    {
+      "id": 11,
+      "name": "Gustave Eiffel",
+      "instructor": false,
+      "courseId": 1
+    },
+    {
+      "id": 12,
+      "name": "James Watt",
+      "instructor": false,
+      "courseId": 1
+    },
+    {
+      "id": 13,
+      "name": "Thomas Edison",
+      "instructor": false,
+      "courseId": 1
+    },
+    {
+      "id": 14,
+      "name": "Henry Ford",
+      "instructor": false,
+      "courseId": 1
+    }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "title": "Java Bootcamp"
+    },
+    {
+      "id": 2,
+      "title": "JavaScript Bootcamp"
+    }
+  ]
+}
