@@ -19,6 +19,9 @@ public class PersonDaoGsonImpl implements PersonDao {
 	public Person get(Integer id) {
 		String url = serverUrl + "/people/" + id;
 		try (BufferedReader reader = HttpHelper.doGet(url)) {
+			if (reader == null) {
+				return null;
+			}
 			JsonElement root = new JsonParser().parse(reader);
 			JsonObject personJson = root.getAsJsonObject();
 			return toPerson(personJson);
